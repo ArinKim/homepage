@@ -9,9 +9,8 @@
 .about-title {
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
-    color: #007bff;
 }
 
 .about-container {
