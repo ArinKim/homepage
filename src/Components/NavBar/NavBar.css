@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    margin: 20px 120px;
+    padding: 0px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.nav-contact {
+    padding: 15px 35px;
+    margin: 10px 10px;
+    border-radius: 50px;
+    background-color: #007bff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-contact:hover {
+    transform: scale(1.05);
+}
