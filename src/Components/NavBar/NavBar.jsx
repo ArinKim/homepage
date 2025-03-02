@@ -1,17 +1,58 @@
-import React from "react";
+// import { useState } from "react";
 import "./NavBar.css";
+import { navLinks } from "../../Constants/index.js";
+
+const NavItems = ({ onClick = () => {} }) => (
+  <ul className="nav-menu">
+    {navLinks.map((item) => (
+      <li key={item.id} className="nav-li">
+        <a href={item.href} className="nav-li-item" onClick={onClick}>
+          {item.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+);
 
 function NavBar() {
-  return (
-    <div className="navbar">
-      <ul className="nav-menu">
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-      </ul>
+  // const [isOpen, setIsOpen] = useState(false);
 
-      <div className="nav-contact">Contact Me</div>
-    </div>
+  // const toggleMenu = () => setIsOpen(!isOpen);
+  // const closeMenu = () => setIsOpen(false);
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/90">
+      <div className="navbar">
+        <a href="/" className="nav-title">
+          Arin
+        </a>
+        {/* <button
+          onClick={toggleMenu}
+          className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
+          aria-label="Toggle menu"
+        >
+          <img
+            src={isOpen ? "../../assets/close.svg" : "../../assets/menu.svg"}
+            alt="toggle"
+            className="w-6 h-6"
+          />
+        </button> */}
+
+        <nav className="sm:flex hidden">
+          <NavItems />
+        </nav>
+
+        {/* 
+      Phone menu
+      <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
+        <nav className="p-5">
+          <NavItems onClick={closeMenu} />
+        </nav>
+      </div> */}
+
+        {/* <div className="nav-contact">Contact Me</div> */}
+      </div>
+    </header>
   );
 }
 

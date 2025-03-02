@@ -2,6 +2,7 @@
 
 import Hero from './Components/Hero/Hero'
 import NavBar from './Components/NavBar/NavBar'
+import About from './Components/About/About'
 
 function App() {
 
@@ -12,7 +13,9 @@ function App() {
         < NavBar />
         {/* Me */}
         < Hero />
-        {/* Main */}
+        {/* About */}
+        < About />
+        {/* Projects */}
       </div>
     </>
   )

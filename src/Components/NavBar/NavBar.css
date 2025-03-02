@@ -2,11 +2,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #e9ecef;
     margin: 20px 120px;
-    padding: 0px 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    padding: 10px 10px;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #007bff;
+    text-decoration-line: none;
+}
+
+.nav-title:hover {
+    color: rgb(1, 78, 0);
 }
 
 .nav-menu {
@@ -29,4 +37,13 @@
 
 .nav-contact:hover {
     transform: scale(1.05);
+}
+
+.nav-li-item {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.nav-li-item:hover {
+    color: rgb(1, 78, 0);
 }

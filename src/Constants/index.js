@@ -21,6 +21,26 @@ export const navLinks = [
     },
   ];
 
+  export const aboutMe = [
+    {
+      id: 1,
+      name: 'Dart/Flutter',
+      description: 'Built applications with Dart and Flutter, including custom widgets, routing, and state management.',
+      icon: '../../assets/flutter.svg',
+    },
+    {
+      id: 2,
+      name: 'Javascript/Node.js/React.js',
+      description: 'Developed Cloud Run Functions in Google Cloud Platform with Javascript. This included this website, which was built with React.js.',
+      icon: '../../assets/react.svg',
+    },
+    {
+      id: 3,
+      name: 'Google Cloud Platform/Firebase',
+      description: 'Used Firebase for authentication, Firestore for database, and other GCP services for serverless backend.',
+      icon: '../../assets/gcp.png',
+    },
+  ]
   
   export const myProjects = [
     {
@@ -212,16 +232,6 @@ export const navLinks = [
     },
   ];
   
-  export const calculateSizes = (isSmall, isMobile, isTablet) => {
-    return {
-      deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
-      deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-      cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-      reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-      ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
-      targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
-    };
-  };
   
   export const workExperiences = [
     {
