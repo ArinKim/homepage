@@ -30,8 +30,8 @@ export const navLinks = [
     },
     {
       id: 2,
-      name: 'Javascript/Node.js/React.js',
-      description: 'Developed Cloud Run Functions in Google Cloud Platform with Javascript. This included this website, which was built with React.js.',
+      name: 'Node.js/React.js',
+      description: 'Developed Cloud Run Functions in Google Cloud Platform with Node.js. This included this website, which was built with React.js.',
       icon: '../../assets/react.svg',
     },
     {

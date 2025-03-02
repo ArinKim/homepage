@@ -16,10 +16,10 @@ function About() {
                 <div className="about-text">
                   <h2>{item.name}</h2>
                   <p>{item.description}</p>
+                  <img src="/assets/right-arrow.png" alt="about-arrow" className="about-arrow" />
                 </div>
               </div>
             ))
-            
         }
       </div>
     </div>

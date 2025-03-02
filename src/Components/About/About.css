@@ -15,13 +15,34 @@
 }
 
 .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     gap: 20px;
-    margin: 20px 0;
+    margin: 20px 40px;
+}
+
+.about-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    border: white 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .about-icon {
     width: 5%;
+}
+
+.about-arrow {
+    width: 5%;
+    padding: 20px 0px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.about-arrow:hover {
+    transform: scale(1.3);
 }

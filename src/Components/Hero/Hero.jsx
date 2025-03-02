@@ -1,11 +1,10 @@
 import React from 'react'
 import './Hero.css'
-// import me_img from 'public/assets/arin2.png'
 
 function Hero() {
   return (
     <div className="hero">
-        <img src='/assets/arin2.png' alt="" />
+        <img src='/assets/memoji_circle.png' alt="" />
         <div className="hero-text">
             <h1><span>Hi, I'm Arin.</span> I'm a Software Engineer,</h1>
             <p>with experience in front-end and back-end development.</p>
